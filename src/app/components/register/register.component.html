@@ -1,0 +1,18 @@
+<section class="seccion">
+    <fieldset>
+        <legend>Nuevo Usuario</legend>
+        <form id="formulario" (ngSubmit)="agregarUser()" [formGroup]="formulario">
+            <div class="campo">
+                <label for="Usuario">Usuario:</label>
+                <input type="text" id="Usuario" formControlName="username">
+            </div>
+            <div class="campo">
+                <label for="Contraseña">Contraseña:</label>
+                <input type="text" id="Contraseña" formControlName="password">
+            </div>
+            <div class="campo">
+                <input type="submit" value="Registrarse" id="registrar">
+            </div>
+        </form>
+    </fieldset>
+</section>

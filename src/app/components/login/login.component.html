@@ -1,0 +1,18 @@
+<section class="seccion">
+    <fieldset>
+        <legend>Iniciar Sesión</legend>
+        <form id="formulario" [formGroup]="formulario">
+            <div class="campo">
+                <label for="Usuario">Usuario:</label>
+                <input type="text" id="Usuario" formControlName="username">
+            </div>
+            <div class="campo">
+                <label for="Contraseña">Contraseña:</label>
+                <input type="text" id="Contraseña" formControlName="password">
+            </div>
+            <div class="campo">
+                <input type="submit" value="Enviar" (click)="iniciarSesion()">
+            </div>
+        </form>
+    </fieldset>
+</section>

@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "username": "tisanti",
+      "password": "spiderman",
+      "id": 1
+    },
+    {
+      "username": "juancito",
+      "password": "pelotudito",
+      "id": 2
+    },
+    {
+      "username": "forrin",
+      "password": "tontin",
+      "id": 3
+    },
+    {
+      "username": "asd",
+      "password": "123",
+      "id": 4
+    }
+  ]
+}
