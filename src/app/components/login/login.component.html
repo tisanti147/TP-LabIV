@@ -8,7 +8,8 @@
             </div>
             <div class="campo">
                 <label for="Contraseña">Contraseña:</label>
-                <input type="text" id="Contraseña" formControlName="password">
+                <input [type]="showPassword ? 'text' : 'password'" id="Contraseña" formControlName="password">
+                <button (click)="toggleVisibility()">{{showPassword ? 'Show' : 'Hide'}}</button>
             </div>
             <div class="campo">
                 <input type="submit" value="Enviar" (click)="iniciarSesion()">

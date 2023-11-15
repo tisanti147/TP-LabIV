@@ -10,7 +10,7 @@ import { LoginService } from 'src/app/services/login.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  
+
   formulario: FormGroup = this.formBuilder.group({
     username:['', [Validators.required]],
     password:['', [Validators.required]],
@@ -36,6 +36,12 @@ export class RegisterComponent {
         console.log(err);
       }
     })
+  }
+
+  showPassword: boolean = false;
+
+  toggleVisibility(){
+    this.showPassword = !this.showPassword
   }
 
 }
