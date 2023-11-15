@@ -1,6 +1,10 @@
-<div class="topnav">
-    <a routerLink="/register">Registrarse</a>
-    <a routerLink="/login">Iniciar Sesión</a>
-    <a routerLink="home">Home</a>
-</div>
+<header>
+    <nav *ngIf="path!=='/private'" class="topnav">
+        <a routerLink="/register">Registrarse</a>
+        <a routerLink="/login">Iniciar Sesión</a>
+        <a routerLink="home">Home</a>
+    </nav>
+</header>
+
+
 

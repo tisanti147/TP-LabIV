@@ -25,4 +25,10 @@ export class LoginComponent {
       this.formulario.controls['username'].value,
       this.formulario.controls['password'].value)
   }
+
+  showPassword: boolean = false;
+
+  toggleVisibility(){
+    this.showPassword = !this.showPassword
+  }
 }
